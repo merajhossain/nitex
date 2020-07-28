@@ -1,0 +1,42 @@
+
+.top-menu-wrapper{
+    background: transparent;
+    .navbar-brand{
+        margin-right: 3em;
+    }
+    .nav-link{
+        color: $menuFontColor;
+    }
+    @media screen and (min-width: 1200px){
+        .nav-link{
+            padding-right: 2.1rem !important;
+            padding-left: 2.1rem !important;
+        }
+    }
+    .top-menu-btn-wrapper{
+        .btn{
+            border-radius: 0;
+            background: $btnPrimary;
+            color: $colorWhite;
+            border-color: $btnPrimary;
+            &:hover{
+                border-color: $btnPrimary;
+                background: transparent;
+                color:  $btnPrimary;
+            }
+            &:focus{
+                box-shadow: 0 0 0 0.2rem rgba(34, 173, 188, .25) !important;
+            }
+            &.btn-outline-primary{
+                border-color: $btnPrimary;
+                background: transparent;
+                color:  $btnPrimary;
+                &:hover{
+                    background: $btnPrimary;
+                    color: $colorWhite;
+                }
+            }
+            
+        }
+    }
+}

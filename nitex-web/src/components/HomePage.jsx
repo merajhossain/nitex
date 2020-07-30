@@ -1,19 +1,20 @@
 import React from 'react';
-import HomeSlider from './HomeSlider'
 import SummerTour from './SummerTour';
-import Footer from './Footer';
-import Header from './Header';
+import AppLayout from './AppLayout';
+import HomeSlider from './HomeSlider';
+import SpecialMessage from './SpecialMessage';
+import ServicesPart from './ServicesPart';
 
 const HomePage = () => {
     return (
-        <div className="h-100">
+        <AppLayout>
             <div className="hero-section-wrapper">
-                <Header />
                 <HomeSlider />
             </div>
             <SummerTour />
-            <Footer />
-        </div>
+            <SpecialMessage />
+            <ServicesPart />
+        </AppLayout>
     )
 }
 

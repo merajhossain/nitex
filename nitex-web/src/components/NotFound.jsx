@@ -1,10 +1,14 @@
 import React from 'react';
+import AppLayout from './AppLayout';
+import { Container } from 'react-bootstrap';
 
 const NotFound = () => {
     return(
-        <div>
-        Not Found
-    </div>
+        <AppLayout>
+            <Container className="body-content">
+                
+            </Container>
+        </AppLayout>
     )
 } 
 

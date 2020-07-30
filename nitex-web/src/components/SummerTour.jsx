@@ -12,6 +12,7 @@ import animationThird from '../assests/img/animation-man-3.png';
 const SummerTour = () => {
 
     const [scrollPosition, setPosition] = useState(0);
+    
     useLayoutEffect(() => {
         function updatePosition() {
             setPosition(window.pageYOffset);
@@ -97,7 +98,7 @@ const SummerTour = () => {
                     </Col>
 
                 </Row>
-                <div className="product-list-animation-image-wrapper" name={scrollPosition}>
+                <div className="product-list-animation-image-wrapper">
                     <div className={scrollPosition > 600 ? "animation-image-one move-animation-one" : 'animation-image-one'}>
                         <img src={animationOne} className="img-fluid"/>
                     </div>
